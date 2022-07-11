@@ -1,0 +1,32 @@
+.container {
+    color: white;
+    text-align: center;
+    width: 500px;
+    margin: 5px;
+}
+.top{
+    background: blue;
+    height: 200px;
+    margin: 5px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle{
+    background: white;
+    height: 300px;
+    color: black;
+    font-size: 30px;
+    display: flex;
+}
+.mid{
+    width: 200px;
+    background: yellow;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+.bottom{
+    padding: 50px;
+}

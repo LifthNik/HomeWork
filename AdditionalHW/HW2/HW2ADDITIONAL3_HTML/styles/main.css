@@ -1,0 +1,36 @@
+.container{
+    height: 570px;
+    width: 900px;
+    background: #6f78ff;
+    font-family: "Trebuchet MS", serif;
+}
+.top{
+    display: flex;
+}
+.inside{
+    background: white;
+    height: auto;
+    width: 400px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+.inincide{
+    margin-left: 30px;
+}
+i{
+    font-size: 40px;
+    margin-left: 25px;
+    align-items: center;
+}
+p{
+    margin-right: 30px;
+}
+.second{
+    margin-block: 20px;
+}
+.third{
+    margin-block: 0;
+}
