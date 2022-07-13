@@ -1,0 +1,56 @@
+body{
+    box-sizing: border-box;
+}
+.high{
+    height: 60px;
+    position: relative;
+}
+.low{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+.target{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.circle{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background: white;
+   /*icon settings*/
+    text-align: center;
+}
+.content{
+    width: 200px;
+    border: 3px solid black;
+
+}
+/*icon settings*/
+i{
+    font-size: 50px;
+    position: relative;
+    top: 20px;
+}
+.container>.low>.content>h3{
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+.container>.low>.content>p{
+    position: relative;
+    top: 30px;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.container>.low>.content>button{
+    width: 100px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
