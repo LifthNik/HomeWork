@@ -1,0 +1,50 @@
+* {
+    width: 1000px;
+    margin-top:20px;
+}
+.high{
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: -10px;
+}
+.low{
+    display: flex;
+    justify-content: center;
+}
+.target{
+    position: absolute;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background: white;
+    border-radius: 50%;
+}
+.card{
+    height: 300px;
+    width: 200px;
+    border: 1px solid black;
+    margin: 38px;
+}
+i{
+    font-size:40px ;
+    position: relative;
+    left: 30px;
+}
+h3 {
+    margin-top: 80px;
+    margin-left: 45px;
+}
+p{
+    width: 150px;
+    text-align: justify;
+    margin-left: 20px;
+}
+button{
+    width: 150px;
+    height: 40px;
+    margin-left: 25px;
+    margin-top: 0;
+}
