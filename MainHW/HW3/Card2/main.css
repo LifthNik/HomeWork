@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+}
+/*stylization start*/
+.silver{
+    background: silver;
+}
+.white{
+color: white;
+}
+.blue{
+    background: darkblue;
+}
+.darkblue{
+    background: #000038;
+}
+.brdrradius{
+    border-radius: 10px;
+}
+.w900{
+    width: 900px;
+}
+.w150{
+    width: 150px;
+}
+.h150{
+    height: 150px;
+}
+.h200{
+    height: 200px;
+}
+.h300{
+    height: 300px;
+}
+.h50{
+    height: 50px;
+}/*stylization end*/
+
+#second{
+    position: relative;
+    top: -100px;
+    left: 70px;
+}
+#third{
+    position: relative;
+    top: -50px;
+}
+#fourth{
+    position: relative;
+    top: -50px;
+}
+i{
+    font-size: 40px;
+    position: relative;
+    left: 620px;
+    margin-left: 20px;
+}
+.cube{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: -75px;
+}
+.cubes{
+    margin: 0 -150px 0;
+}
+.cubes:hover{
+    background: yellow;
+    transition: 1000ms;
+}
+#second>i:hover{
+    color: black;
+    transition: 1000ms;
+}
