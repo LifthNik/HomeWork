@@ -1,7 +1,6 @@
-body{
+html,body{
     margin: 10px;
     font-size: 80px;
-    text-align: center;
 }
 .text{
     display: flex;
@@ -29,20 +28,54 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
-
 .c,.d,.e{
-    box-sizing: border-box;
-    height: 330px;
-    width: 330px;
+    height: 400px;
+    width: 400px;
 }
-
 .f{
     margin-top: 10px;
-    margin-left: 70px;
-    height: 591px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 660px;
     width: 30%;
     position: absolute;
     right: 10px;
+}
+@media screen and (max-width: 900px) {
+    .top {
+        height: 100px;
+        width: auto;
+        margin: 12px;
+    }
+    .bottom{
+        flex-direction: column;
+        width: 100%;
+    }
+    .b{
+        height: 200px;
+        width: auto;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .f{
+        height: 250px;
+        top: 570px;
+
+        width: auto;
+
+        right: 20px;
+        left: 20px;
+
+    }
+    .center{
+        width: 100%;
+    }
+    .c,.d,.e{
+        height: 200px;
+        width: 200px;
+        margin:10px;
+
+    }
+
 }
