@@ -11,10 +11,21 @@ h2 {
 .flex   {
     display: flex;
 }
+.txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.txt1{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    align-content: center;
+}
 .logo{
     width: 20%;
     background: #414141;
-
 }
 .header{
     width: 80%;
@@ -53,6 +64,8 @@ h2 {
     width: 59.2%;
     height: 800px;
     margin-left: 6px;
+    display: flex;
+    align-items: center;
 }
 .RP{
     background: #414141;
@@ -86,6 +99,13 @@ h2 {
 
     .header{
         margin-left: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        flex-wrap: wrap;
+        align-content: center;
+        flex-direction: row;
+
     }
     .center1{
         justify-content: space-between;
