@@ -57,15 +57,12 @@ h2 {
     position: relative;
     left: 20%;
     top: -350px;
-    right: 0;
 }
 .TOB{
     background: #414141;
     width: 59.2%;
     height: 800px;
     margin-left: 6px;
-    display: flex;
-    align-items: center;
 }
 .RP{
     background: #414141;
@@ -89,11 +86,9 @@ h2 {
 }
 .bottom{
     background: #414141;
-    width: 100%;
     height: 200px;
     position: relative;
     top: -795px;
-    margin-right: 0;
 }
 @media screen and (max-width: 700px){
 
