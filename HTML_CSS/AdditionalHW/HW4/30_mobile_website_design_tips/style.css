@@ -1,0 +1,140 @@
+html,body{
+    font-family: "Trebuchet MS", serif;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+h2 {
+    color: brown;
+    margin-top: 5px;
+}
+.flex   {
+    display: flex;
+}
+.logo{
+    width: 20%;
+    background: #414141;
+
+}
+.header{
+    width: 80%;
+    background: #414141;
+    margin-left: 10px;
+}
+.center1{
+    margin-top: 10px;
+}
+.NAW{
+    background: #414141;
+    width: 20%;
+    height: 600px;
+}
+.BSI{
+    background: #414141;
+    width: 60%;
+    height: 250px;
+    margin-left: 10px;
+}
+.AD{
+    background: #414141;
+    width: 20%;
+    height: 250px;
+    margin-left: 10px;
+}
+.center2{
+    margin-top: 10px;
+    position: relative;
+    left: 20%;
+    top: -350px;
+    right: 0;
+}
+.TOB{
+    background: #414141;
+    width: 59.2%;
+    height: 800px;
+    margin-left: 6px;
+}
+.RP{
+    background: #414141;
+    width: 19.9%;
+    margin-left: 10px;
+}
+.center21{
+    flex-direction: column;
+    position: relative;
+    top: -800px;
+    width: 19.8%;
+}
+.SL{
+    background: #414141;
+    height: 220px;
+    margin-bottom: 10px;
+}
+.tools{
+    background: #414141;
+    height: 220px;
+}
+.bottom{
+    background: #414141;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    top: -795px;
+    margin-right: 0;
+}
+@media screen and (max-width: 700px){
+
+    .header{
+        margin-left: 3px;
+    }
+    .center1{
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+    .NAW{
+        height: 200px;
+        width: 100%;
+    }
+    .BSI{
+        width: 55%;
+        margin-top: 10px;
+        margin-left: 1px;
+    }
+    .AD{
+        margin-top: 10px;
+        margin-left: 0;
+        width: 44%;
+    }
+    .center2{
+        position: static;
+        flex-wrap: wrap;
+    }
+    .TOB{
+        margin-left: 0;
+        height: 500px;
+        width: 100%;
+    }
+    .RP{
+        margin-left: 0;
+        margin-top: 10px;
+        height: 200px;
+        width: 100%;
+    }
+    .center21{
+        position: static;
+        flex-direction: initial;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .SL{
+        width: 50%;
+    }
+    .tools{
+        width: 50%;
+        margin-left: 10px;
+    }
+    .bottom{
+        position: static;
+    }
+}
