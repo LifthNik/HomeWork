@@ -1,0 +1,157 @@
+body{
+    background: #006d75;
+}
+.header{
+    height: 100px;
+    width: 100%;
+    background: white;
+
+    border: 5px solid black;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.head1, .head2{
+    margin: 20px;
+
+    height: 50px;
+    width: 150px;
+
+    background: silver;
+}
+.center{
+    display: flex;
+}
+.second{
+    height: 2250px;
+    width: 13%;
+    background: white;
+
+    border: 5px solid black;
+    border-top: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.secin{
+    margin: 5px;
+
+    background: silver;
+
+    height: 50px;
+    width: 150px;
+  }
+.third{
+    background: white;
+    height: 290px;
+    width: 90%;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+    padding: 20px;
+}
+.thirin{
+    height: 100%;
+    width: 100%;
+    background: silver;
+}
+.fourth{
+    width: 86.15%;
+    height: 300px;
+
+    position: absolute;
+    left: 12.9%;
+    top: 45.2%;
+
+    border: 5px solid black;
+    background: white;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.fourin{
+    height: 225px;
+    width: 300px;
+
+    background: silver;
+}
+.fifth {
+    height: auto;
+    width: 64%;
+
+    background: white;
+
+    border: 5px solid black;
+
+    position: absolute;
+    left: 12.9%;
+    top: 76.7%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.fifthin{
+    width: 400px;
+    height: 200px;
+
+    background: silver;
+
+    margin: 20px;
+}
+.sixth{
+    height: 1440px;
+    width: 22%;
+
+    background: white;
+    border: 5px solid black;
+
+    position: absolute;
+    right: 8px;
+    top: 743px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sixin{
+    height: 150px;
+    width: 200px;
+
+    background: silver;
+
+    margin-top: 20px;
+
+}
+.bottom{
+    width: 86.9%;
+    height: 165px;
+
+    background: white;
+    border: 5px solid black;
+
+    position: relative;
+    left: 237px;
+    bottom: 175px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.botin1{
+    height: 50px;
+    width: 70%;
+    background: silver;
+}
+
+.botin2{
+    height: 50px;
+    width: 20%;
+    background: silver;
+}
