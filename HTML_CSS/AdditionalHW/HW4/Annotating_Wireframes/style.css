@@ -1,5 +1,6 @@
 body{
     background: #006d75;
+    margin-right: 100px;
 }
 .header{
     background: white;
@@ -8,7 +9,6 @@ body{
 
     display: flex;
     justify-content: space-between;
-
 }
 .head1, .head2{
     margin: 20px;
@@ -22,7 +22,6 @@ body{
     display: flex;
 }
 .second{
-    position: center;
     height: 245vh;
     background: white;
 
@@ -31,6 +30,7 @@ body{
 
     display: flex;
     flex-direction: column;
+
 }
 .secin{
     margin: 10px;
@@ -89,7 +89,7 @@ body{
     justify-content: center;
 }
 .fifthin{
-    width: 500px;
+    width: 410px;
     height: 200px;
 
     background: silver;
@@ -137,8 +137,6 @@ body{
     justify-content: space-around;
     align-items: center;
 
-    position: relative;
-    bottom: 18.1vh;
 }
 .botin1{
     height: 50px;
@@ -152,17 +150,15 @@ body{
     background: silver;
 }
 
-@media screen and (max-width: 1405px){
+@media screen and (max-width: 1380px){
     body{
-        margin-left: 50px;
+        margin: 0;
     }
+
     .header{
-        width: 800px;
+        margin-left:180px ;
 
         border-right: 5px solid black;
-
-        position: relative;
-        left: 180px;
     }
     .second{
         max-height: 600px;
@@ -172,33 +168,39 @@ body{
     }
     .third{
         border-left: 5px solid black;
-        width: 760px;
+        margin-right: 29px;
     }
     .fourth{
         border-left: 5px solid black;
-        width: 800px;
         height: 500px;
         flex-wrap: wrap;
+        flex-direction: column;
+        margin-right: 29px;
     }
     .midbot{
         flex-wrap: wrap;
+    }
+    .fifth{
+        height: 550px;
+        width: auto;
+        border-left: 5px solid black;
+        overflow: scroll;
+        margin-right: 29px;
     }
     .fifthin{
         width: 350px;
         height: 220px;
     }
-    .fifth{
-        height: 550px;
-        width: 800px;
-        border-left: 5px solid black;
-        overflow: scroll;
-    }
     .sixth{
         border-top: 5px solid black;
         border-left: 5px solid black;
 
-        width: 800px;
+        flex-direction: row;
+
+        width: 85vw;
         height: 400px;
+
+        margin-right: 29px;
     }
     .sixdeep{
         width: 800px;
@@ -206,23 +208,28 @@ body{
     .sixin{
         margin-left: 30px;
         height: 100px;
-        width: 350px;
+        width: 550px;
     }
     .botsix{
+        width: 50vw;
         min-height: 340px;
-        position: relative;
-        left: 175px;
-        bottom: 340px;
-        margin: 0;
+        margin-right: 20px;
     }
     .bottom{
         border-left: 5px solid black;
-        top: 0;
-        width: 800px;
     }
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 970px){
     body{
-        background: #02e9ff;
+        margin: 0;
+    }
+    .header{
+        width: 70vw;
+
+        position: relative;
+        left: 180px;
+    }
+    .third{
+        width: 63vw;
     }
 }
