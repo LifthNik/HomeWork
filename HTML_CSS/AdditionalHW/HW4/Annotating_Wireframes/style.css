@@ -22,6 +22,7 @@ body{
     display: flex;
 }
 .second{
+    position: center;
     height: 245vh;
     background: white;
 
@@ -151,7 +152,7 @@ body{
     background: silver;
 }
 
-@media screen and (max-width: 1605px) and (min-width: 1200px){
+@media screen and (max-width: 1405px){
     body{
         margin-left: 50px;
     }
@@ -220,6 +221,8 @@ body{
         width: 800px;
     }
 }
-@media screen and (max-width: 1200px) and (min-width: 430px){
-
+@media screen and (max-width: 800px){
+    body{
+        background: #02e9ff;
+    }
 }
