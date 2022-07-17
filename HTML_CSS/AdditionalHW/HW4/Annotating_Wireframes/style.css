@@ -26,7 +26,7 @@ body{
     display: flex;
 }
 .second{
-    height: 2250px;
+    height: 2340px;
     width: 13%;
     background: white;
 
@@ -104,9 +104,16 @@ body{
 
     margin: 20px;
 }
+
+.fifthbot{
+    height: 50px;
+    width: 100px;
+
+    background: silver;
+}
 .sixth{
-    height: 1440px;
-    width: 22%;
+    height: 1550px;
+    width: 21.9%;
 
     background: white;
     border: 5px solid black;
@@ -155,3 +162,4 @@ body{
     width: 20%;
     background: silver;
 }
+
