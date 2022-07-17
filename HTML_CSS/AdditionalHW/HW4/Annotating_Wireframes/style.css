@@ -22,7 +22,7 @@ body{
     display: flex;
 }
 .second{
-    height: 2380px;
+    height: 245vh;
     background: white;
 
     border: 5px solid black;
@@ -48,7 +48,6 @@ body{
 }
 .thirin{
     height: 100%;
-    width: 84.45vw;
     background: silver;
 }
 .fourth{
@@ -82,7 +81,6 @@ body{
 
     background: white;
 
-    border-bottom: 5px solid black;
     border-right: 5px solid black;
 
     display: flex;
@@ -90,7 +88,7 @@ body{
     justify-content: center;
 }
 .fifthin{
-    width: 400px;
+    width: 500px;
     height: 200px;
 
     background: silver;
@@ -108,7 +106,6 @@ body{
     width: 21.9%;
 
     background: white;
-    border-bottom: 5px solid black;
     border-right: 5px solid black;
 
     display: flex;
@@ -128,6 +125,7 @@ body{
     height: 165px;
 
     background: white;
+    border-top: 5px solid black;
     border-bottom: 5px solid black;
     border-right: 5px solid black;
 
@@ -139,7 +137,7 @@ body{
     align-items: center;
 
     position: relative;
-    bottom: 170px;
+    bottom: 18.1vh;
 }
 .botin1{
     height: 50px;
@@ -153,4 +151,6 @@ body{
     background: silver;
 }
 
-@media screen and (max-width: 1910px){  }
+@media screen and (max-width: 1606px){
+
+}
