@@ -10,7 +10,6 @@ body{
     box-sizing: border-box;
 
     display: flex;
-    align-items: center;
     justify-content: space-between;
 
 }
@@ -26,8 +25,7 @@ body{
     display: flex;
 }
 .second{
-    height: 2340px;
-    width: 13%;
+    height: 2380px;
     background: white;
 
     border: 5px solid black;
@@ -35,10 +33,9 @@ body{
 
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 .secin{
-    margin: 5px;
+    margin: 10px;
 
     background: silver;
 
@@ -47,31 +44,31 @@ body{
   }
 .third{
     background: white;
-    height: 290px;
-    width: 90%;
+    height: 35vh;
     border-right: 5px solid black;
     border-bottom: 5px solid black;
     padding: 20px;
 }
 .thirin{
     height: 100%;
-    width: 100%;
+    width: 84.45vw;
     background: silver;
 }
 .fourth{
-    width: 86.15%;
-    height: 300px;
+    height: 30vh;
 
-    position: absolute;
-    left: 12.9%;
-    top: 45.2%;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
 
-    border: 5px solid black;
     background: white;
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+}
+.row   {
+    display: flex;
+    flex-direction: column;
 }
 .fourin{
     height: 225px;
@@ -79,17 +76,19 @@ body{
 
     background: silver;
 }
+
+.midbot{
+    display: flex;
+}
 .fifth {
     height: auto;
-    width: 64%;
+    width: 78%;
 
     background: white;
 
-    border: 5px solid black;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
 
-    position: absolute;
-    left: 12.9%;
-    top: 76.7%;
 
     display: flex;
     flex-wrap: wrap;
@@ -112,15 +111,11 @@ body{
     background: silver;
 }
 .sixth{
-    height: 1550px;
     width: 21.9%;
 
     background: white;
-    border: 5px solid black;
-
-    position: absolute;
-    right: 8px;
-    top: 743px;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
 
     display: flex;
     flex-direction: column;
@@ -128,7 +123,7 @@ body{
 }
 .sixin{
     height: 150px;
-    width: 200px;
+    width: 250px;
 
     background: silver;
 
@@ -136,20 +131,22 @@ body{
 
 }
 .bottom{
-    width: 86.9%;
+    width: auto;
     height: 165px;
 
     background: white;
-    border: 5px solid black;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
 
-    position: relative;
-    left: 237px;
-    bottom: 175px;
+    margin-left: 180px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+
+    position: relative;
+    bottom: 170px;
 }
 .botin1{
     height: 50px;
@@ -163,3 +160,4 @@ body{
     background: silver;
 }
 
+@media screen and (max-width: 1910px){  }
