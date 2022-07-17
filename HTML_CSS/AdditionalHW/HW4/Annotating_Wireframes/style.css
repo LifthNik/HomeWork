@@ -1,8 +1,8 @@
-body{
+body {
     background: #006d75;
-    margin-right: 100px;
 }
-.header{
+.header {
+    width: 97.75vw;
     background: white;
 
     border: 5px solid black;
@@ -10,7 +10,7 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.head1, .head2{
+.head1, .head2 {
     margin: 20px;
 
     height: 50px;
@@ -22,7 +22,7 @@ body{
     display: flex;
 }
 .second{
-    height: 245vh;
+    height: 248.5vh;
     background: white;
 
     border: 5px solid black;
@@ -137,6 +137,9 @@ body{
     justify-content: space-around;
     align-items: center;
 
+    position: relative;
+    bottom: 18.4vh;
+
 }
 .botin1{
     height: 50px;
@@ -151,13 +154,13 @@ body{
 }
 
 @media screen and (max-width: 1380px){
-    body{
-        margin: 0;
+    .mid{
+        width: 910px;
     }
 
     .header{
         margin-left:180px ;
-
+        width: 871px;
         border-right: 5px solid black;
     }
     .second{
@@ -176,6 +179,9 @@ body{
         flex-wrap: wrap;
         flex-direction: column;
         margin-right: 29px;
+    }
+    .center{
+        width: 100vw;
     }
     .midbot{
         flex-wrap: wrap;
@@ -197,7 +203,7 @@ body{
 
         flex-direction: row;
 
-        width: 85vw;
+        width: 871px;
         height: 400px;
 
         margin-right: 29px;
@@ -207,8 +213,8 @@ body{
     }
     .sixin{
         margin-left: 30px;
-        height: 100px;
-        width: 550px;
+        height: 75px;
+        width: 400px;
     }
     .botsix{
         width: 50vw;
@@ -217,19 +223,51 @@ body{
     }
     .bottom{
         border-left: 5px solid black;
+        top: 0;
+        width: 871px;
     }
 }
-@media screen and (max-width: 970px){
+@media screen and (max-width: 900px){
     body{
         margin: 0;
     }
     .header{
-        width: 70vw;
+        width: 500px;
 
-        position: relative;
-        left: 180px;
     }
     .third{
-        width: 63vw;
+        width: 460px;
+    }
+    .fourth{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 500px  ;
+    }
+    .fourin{
+        width: 210px;
+        height: 170px;
+    }
+    .fifth{
+        width: 500px;
+    }
+    .fifthin{
+        width: 440px;
+        height: 70px;
+    }
+    .fift3{ !important;
+        width: 200px;
+        height: 50px;
+    }
+    .sixth{
+        width: 480px;
+        height: 700px;
+        flex-wrap: wrap;
+        padding-left: 20px;
+    }
+    .botsix{
+        width:400px;
+    }
+    .bottom{
+        width: 500px;
     }
 }
