@@ -3,7 +3,9 @@ let middleName = prompt('Your Middle Name?');
 let age = prompt('Your Age?');
 
 let person = `${firstName} ${middleName} ${age}`;
-// console.log(firstName + ' ' + middleName + ' ' + age); //or the hard way.
+
+// console.log(firstName + ' ' + middleName + ' ' + age); //the hard way.
+
 console.log(person);
 
 //optional
