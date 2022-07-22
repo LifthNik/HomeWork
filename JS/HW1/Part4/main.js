@@ -9,4 +9,4 @@ let person = `${firstName} ${middleName} ${age}`;
 console.log(person);
 
 //optional
-alert(`Hello, ${firstName + ' ' + middleName}. You are ${age} years old!`);
+alert(`Hello, ${firstName} ${middleName}. You are ${age} years old!`);
