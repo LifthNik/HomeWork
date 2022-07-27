@@ -17,19 +17,19 @@ console.log(mass[9]);
 
 let book1 = {
     title: 'JS 4 Kids',
-    pageCount: +'300',
+    pageCount: 300,
     genre: 'Edu',
 };
 
 let book2 = {
     title: 'HTML/CSS 4 Kids',
-    pageCount: +'50',
+    pageCount: 50,
     genre: 'Comic',
 };
 
 let book3 = {
     title: 'React 4 Kids',
-    pageCount: +'1000000',
+    pageCount: 1000000,
     genre: 'BrainF__k',
 };
 
@@ -39,7 +39,7 @@ let book3 = {
 
 let bookAut1 = {
     title: 'Simpsons',
-    pageCount: +'5000',
+    pageCount: 5000,
     genre: 'Satire',
     Authors: [
         {name: 'Matt Groening', age: 68},
@@ -49,7 +49,7 @@ let bookAut1 = {
 
 let bookAut2 = {
     title: 'Forgotten Realms',
-    pageCount: +'2000',
+    pageCount: 2000,
     genre: 'Fantasy',
     Authors: [
         {name: 'Robert Salvatore', age: 64},
@@ -59,7 +59,7 @@ let bookAut2 = {
 
 let bookAut3 = {
     title: 'Stick Control',
-    pageCount: +'46',
+    pageCount: 46,
     genre: 'Drum Book',
     Authors: [
         {name: 'George Lawrence Stone', age: 81},
