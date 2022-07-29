@@ -19,7 +19,7 @@ if (x !== 0) {
 // Потрібно написати код, який перевірить, до якої четверті години попадає число
 // (в першу, другу, третю или четверту частину години).
 
-let time = 48;
+let time = 18;
 
 if (time >= 0 && time <= 14) {
     console.log('first');
@@ -31,12 +31,15 @@ if (time >= 0 && time <= 14) {
     console.log('third');
 } else if
 (time >= 45 && time <= 59) {
-    console.log('fourth')
+    console.log('fourth');
+} else {
+    console.log('Type number between 0 - 59')
 }
+
 // - У змінній day дано якесь число від 1 до 31.
 // Потрібно визначити, у яку половину(декаду) місяця потрапляє це число (у першу, другу чи третю).
 
-let day = 28;
+let day = 12;
 
 if (day > 1 && day < 10) {
     console.log('First decade');
@@ -44,8 +47,10 @@ if (day > 1 && day < 10) {
 (day > 10 && day < 20) {
     console.log('Second decade');
 } else if
-(day > 21) {
+(day > 21 && day < 31) {
     console.log('Third decade');
+} else {
+    console.log('There is no such day!')
 }
 
 // - Скласти розклад на тиждень за домопоги switch.Користувач вводить порядковий номер дня тижня
@@ -124,14 +129,20 @@ let a = prompt('Enter the first number:');
 let b = prompt('Enter the second number:');
 
 if (a > b) {
-    console.log(`${a} is bigger`);
+    console.log('First number is bigger');
 } else if
 (b > a) {
-    console.log(`${b} is largest`);
+    console.log('Second number is largest');
 } else if
 (b === '' && a === '') {
-    console.log('You did not enter the number!');
+    console.log('You did not enter the number!'); //хотів врахувати всі можливі варіанти у цій ситуаціі
 } else {
-    console.log(`Number ${a} is equal to ${b}`);
+    console.log(`First number is equal to second`);
 }
 
+// - є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно). Напишіть код який,
+// за допомоги  оператора || буде присвоювати змінній х значення "default"  якщо значення змінної х являється falsy
+// (хибноподыбне, тобто кастується до false)
+
+let c = 0 || "default"; // Х була задіяна в першому завданні, довелось використати С.
+console.log(c);
