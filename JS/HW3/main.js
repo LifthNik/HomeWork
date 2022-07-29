@@ -8,7 +8,6 @@ let x = 15;
 // x = 0; //false
 // x = -3; //true
 
-
 if (x !== 0) {
     console.log(true);
 
@@ -44,7 +43,7 @@ if (day > 1 && day < 10) {
 } else if
 (day > 10 && day < 20) {
     console.log('Second decade');
-}else if
+} else if
 (day > 21) {
     console.log('Third decade');
 }
@@ -58,56 +57,56 @@ let dayOfWeek = prompt('What day of the week is it?');
 switch (dayOfWeek) {
     case '1':
         document.write
-        (`<h1>Its Monday!</h1> 
-<ul>TODO:</ul> 
+        (`<h1>Its Monday!</h1>
+<ul>TODO:</ul>
 <li>something</li>
 <li>something</li>
 <li>something</li>`)
         break
     case'2':
         document.write
-        (`<h1>Its Tuesday!</h1> 
-<ul>TODO:</ul> 
+        (`<h1>Its Tuesday!</h1>
+<ul>TODO:</ul>
 <li>something</li>
 <li>something</li>
 <li>something</li>`)
         break
     case'3':
         document.write
-        (`<h1>Its Wednesday!</h1> 
-<ul>TODO:</ul> 
+        (`<h1>Its Wednesday!</h1>
+<ul>TODO:</ul>
 <li>something</li>
 <li>something</li>
 <li>something</li>`)
         break
     case'4':
         document.write
-        (`<h1>Its Thursday!</h1> 
-<ul>TODO:</ul> 
+        (`<h1>Its Thursday!</h1>
+<ul>TODO:</ul>
 <li>something</li>
 <li>something</li>
 <li>something</li>`)
         break
     case'5':
         document.write
-        (`<h1>Its Friday!</h1> 
-<ul>TODO:</ul> 
+        (`<h1>Its Friday!</h1>
+<ul>TODO:</ul>
 <li>something</li>
 <li>something</li>
 <li>something</li>`)
         break
     case'6':
         document.write
-        (`<h1>Its Saturday!</h1> 
-<ul>TODO:</ul> 
+        (`<h1>Its Saturday!</h1>
+<ul>TODO:</ul>
 <li>something</li>
 <li>something</li>
 <li>something</li>`)
         break
     case'7':
         document.write
-        (`<h1>Its Sunday!</h1> 
-<ul>TODO:</ul> 
+        (`<h1>Its Sunday!</h1>
+<ul>TODO:</ul>
 <li>something</li>
 <li>something</li>
 <li>something</li>`)
@@ -116,3 +115,23 @@ switch (dayOfWeek) {
         document.write
         (`<h1>Enter the valid number!</h1>`)
 }
+
+// - Користувач вводить або має два числа.
+//     Потрібно знайти та вивести максимальне число з тих двох .
+//     Також потрібно врахувати коли введені рівні числа.
+
+let a = prompt('Enter the first number:');
+let b = prompt('Enter the second number:');
+
+if (a > b) {
+    console.log(`${a} is bigger`);
+} else if
+(b > a) {
+    console.log(`${b} is largest`);
+} else if
+(b === '' && a === '') {
+    console.log('You did not enter the number!');
+} else {
+    console.log(`Number ${a} is equal to ${b}`);
+}
+
