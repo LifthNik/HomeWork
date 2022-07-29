@@ -129,10 +129,10 @@ let a = prompt('Enter the first number:');
 let b = prompt('Enter the second number:');
 
 if (a > b) {
-    console.log('First number is bigger');
+    console.log(`Number ${a} is bigger`);
 } else if
 (b > a) {
-    console.log('Second number is largest');
+    console.log(`Number ${b} is largest`);
 } else if
 (b === '' && a === '') {
     console.log('You did not enter the number!'); //хотів врахувати всі можливі варіанти у цій ситуаціі
