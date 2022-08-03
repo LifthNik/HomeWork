@@ -22,6 +22,7 @@ document.write(`<h2>Task 2</h2>`);
 }
     document.write(`</div>`);
 
+
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
 
 document.write(`<div class="task3">`);
@@ -33,6 +34,7 @@ while (c < 20) {
     c++;
 }
 document.write(`</div>`);
+
 
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
 
@@ -105,6 +107,8 @@ for (let p = 0; p < products.length; p++) {
 
 
 document.write(`<h1 class="flcent" style="font-size: 50px; margin-top: 30px">Task 7 in console</h1>`)
+
+
 // є масив users  за допомоги циклу вивести:
 //  - користувачів зі статусом true
 //  - користувачів зі статусом false
