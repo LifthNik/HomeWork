@@ -88,7 +88,8 @@ let products = [
     },
 ];
 
-document.write(`<h2 style="display: flex; justify-content: center">Task 6:</h2><div class= "productCards">`);
+document.write(`<h2 class="flcent" ">Task 6:</h2>
+                <div class= "productCards">`);
 
 for (let p = 0; p < products.length; p++) {
     let product = products[p];
@@ -96,11 +97,13 @@ for (let p = 0; p < products.length; p++) {
 
 <h3 class="product-title">${product.title}. Price: ${product.price}</h3>
 
-<img src=${product.image} alt="" class="product-image">
-</div>`)
+<img src=${product.image} alt="" class="product-image"></div>`)
 
 }
+    document.write(`</div>`)
 
+
+document.write(`<h1 class="flcent" style="font-size: 50px">Task 7 in console</h1>`)
 // є масив users  за допомоги циклу вивести:
 //  - користувачів зі статусом true
 //  - користувачів зі статусом false
