@@ -33,6 +33,7 @@ while (c < 20) {
     c++;
 }
 document.write(`</div>`);
+
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
 
 document.write(`<div class="task4">`);
