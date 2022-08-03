@@ -129,18 +129,21 @@ let users = [
 ];
 
 console.log('користувачі зі статусом true')
+
 for (let u of users) {
-    if (u.status === true)
+    if (u.status)
         console.log(u);
 }
 
 console.log('користувачі зі статусом false')
+
 for (let u of users) {
-    if (u.status === false)
+    if (!u.status)
         console.log(u);
 }
 
 console.log('користувачі які старші за 30 років')
+
 for (let u of users) {
     if (u.age > 30)
         console.log(u);
