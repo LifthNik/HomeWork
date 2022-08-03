@@ -132,7 +132,6 @@ console.log('користувачі зі статусом true')
 for (let u of users) {
     if (u.status === true)
         console.log(u);
-
 }
 
 console.log('користувачі зі статусом false')
