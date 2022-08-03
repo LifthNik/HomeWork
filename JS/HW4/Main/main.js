@@ -134,7 +134,7 @@ for (let u of users) {
 }
 
 console.log('користувачі які старші за 30 років')
-for (const u of users) {
+for (let u of users) {
     if (u.age > 30)
-    console.log(u)
+        console.log(u);
 }
