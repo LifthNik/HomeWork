@@ -153,7 +153,7 @@ document.write('Task 10, 11 in console');
 function findMin(list) {
 	let min = list[0];
 	for (let i = 0; i < list.length; i++) {
-		if (list[0] > list[i]) {
+		if (min > list[i]) {
 			min = list[i];
 		}
 	}
