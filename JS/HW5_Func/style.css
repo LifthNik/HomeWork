@@ -1,0 +1,10 @@
+.head {
+    display: flex;
+}
+.idCard {
+    background: silver;
+    margin-right: 5px;
+}
+ul {
+    padding: 20px;
+}
