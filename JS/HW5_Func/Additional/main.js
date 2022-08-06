@@ -56,7 +56,7 @@ let minNumArr = (list) => {
     let min = list[0];
     for (let i = 0; i < list.length; i++) {
         if(min > list[i]) {
-    min= list[i];
+            min= list[i];
         }
 
     }
@@ -107,20 +107,19 @@ function numbsBetween(a,b) {
     }
 }
 
-numbsBetween(20, 15);
-// -   функція Приймає масив та число "i", та міняє місцями об`єкт який знаходиться в індексі "i" на "i+1"
-//   EXAMPLE:
-//   foo([9,8,0,4], 0) // ==> [ 8, 9, 0, 4 ]
-//   foo([9,8,0,4], 1) // ==> [ 9 ,0, 8, 4 ]
-//   foo([9,8,0,4], 2) // ==> [ 9, 8, 4, 0 ]
+numbsBetween(20, 30);
 
-// let chArr = [1, 2, 3, 4];
-//
-// let change = (array.index) => {
-//     let tmp = array[index];
-//     array[index] = array[index + 1]
-//     array[index + 1] = tmp;
-// }
+// -   функція Приймає масив та число "i", та міняє місцями об`єкт який знаходиться в індексі "i" на "i+1"
+
+let ArrOfNumbs = [0, 20, 7, 3, 5, 40];
+
+const change = (mArr, i) => {
+    let core = mArr[i];
+    mArr[i] = mArr[i + 1];
+    mArr[i + 1] = core;
+    return ArrOfNumbs;
+}
+console.log(change(ArrOfNumbs, 4));
 
 // - Сворити функцію яка буде переносити елементи з значенням 0 у кінець маисву.
 // Зберігаючи при цьому порядок не нульових значень.
@@ -130,21 +129,22 @@ numbsBetween(20, 15);
 // [0,1,2,3,4] => [1,2,3,4,0]
 // [0,0,1,0]   => [1,0,0,0]
 
-// let resNumb = [0, 10, 4, 0, 1, 0, 123, 0, 1];
-// let result = [];
-// let zeros = 0;
-// let ind = 0;
+let resNumb = [0, 10, 4, 0, 1, 0, 123, 0, 1];
+let result = [];
+let zeros = 0;
+let ind = 0;
 //
-// for (let i = 0; i < resNumb.length; i++) {
-//     if (resNumb === 0) {
-//         zeros++;
-//     } else {
-//         result[ind++] = resNumb[i];
-//     }
-// }
-// console.log(result);
-//
-// for (let i = 0; i < result.length; i++) {
-//
-//
-// }
+for (let i = 0; i < resNumb.length; i++) {
+    if (resNumb[i] === 0) {
+        zeros++;
+    } else {
+        result[ind++] = resNumb[i];
+    }
+}
+console.log(result);
+
+let zeroArr = result.length;
+for (let i = 0; i < zeros; i++) {
+    result[zeroArr++] = 0;
+}
+console.log(result);
