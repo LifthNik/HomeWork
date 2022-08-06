@@ -141,7 +141,6 @@ for (let i = 0; i < resNumb.length; i++) {
         result[ind++] = resNumb[i];
     }
 }
-console.log(result);
 
 let zeroArr = result.length;
 for (let i = 0; i < zeros; i++) {
