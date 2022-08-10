@@ -78,7 +78,7 @@ youL('Lorem');
 
 document.write('Task 7');
 
-function ulLoop(text) {
+function ulLoop(text, a) {
 	document.write(`<ul>`);
 
 	for (let i = 0; i < a; i++) {
@@ -89,8 +89,7 @@ function ulLoop(text) {
 	document.write(`</ul>`);
 }
 
-a = 3;
-ulLoop('Lorem');
+ulLoop('Lorem', 3);
 
 
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
