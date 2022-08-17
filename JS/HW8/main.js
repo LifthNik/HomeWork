@@ -109,27 +109,31 @@ function CarConstructor(model, producer, year, maxSpeed, engine) {
     this.maxSpeed = maxSpeed;
     this.engine = engine;
 
+// -- drive () - яка виводить в консоль `їдемо зі швидкістю ${максимальна швидкість} на годину`
+
     this.drive = function () {
         console.log(`Їдемо зі швидкістю ${maxSpeed} км. на годину`);
     };
 
+// -- info () - яка виводить всю інформацію про автомобіль в форматі `назва поля - значення поля`
 
     this.info = function () {
-
         console.log(`Model - ${model}, Producer - ${producer}, Year - ${year}, Max Speed - ${maxSpeed}, Engine - ${engine}`);
     };
 
+// -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
 
     this.increaseMaxSpeed = function (newSpeed) {
-
         console.log(maxSpeed + newSpeed);
     };
 
+// -- changeYear (newValue) - змінює рік випуску на значення newValue
 
     this.changeYear = function (newValue) {
-
         console.log(this.year = newValue);
     };
+
+// -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
 
     this.addDriver = function (driverName, driverAge, driverPhone) {
 
