@@ -148,7 +148,6 @@ function CarConstructor(model, producer, year, maxSpeed, engine) {
 
 let car = new CarConstructor('Lancer', 'Japan',2010,230,1.5);
 
-
 car.addDriver('Vasya', 29, 1111111);
 
 
