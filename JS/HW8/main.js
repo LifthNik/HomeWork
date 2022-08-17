@@ -233,6 +233,7 @@ classCar.changeYear(2022);
 classCar.addDriver('petya',40,2222222)
 console.log(classCar.driver)
 
+
 // -створити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги. Створити масив з 10 попелюшок.
 // Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
 //     За допомоги циклу знайти яка попелюшка повинна бути з принцом.
@@ -241,7 +242,7 @@ console.log(classCar.driver)
 // -створити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги. Створити масив з 10 попелюшок.
 
 
-class CinderellasList {
+class Cinderella {
     constructor(name,age,foot) {
         this.name = name;
         this.age = age;
@@ -251,16 +252,16 @@ class CinderellasList {
 
 let cinderellasArr = [];
 
-let cinder1 = new CinderellasList('Anna', 18, 37);
-let cinder2 = new CinderellasList('Vika', 20, 39);
-let cinder3= new CinderellasList('Sveta', 25, 38);
-let cinder4 = new CinderellasList('Alina', 40, 41);
-let cinder5 = new CinderellasList('Nadya', 19, 35);
-let cinder6 = new CinderellasList('Julia', 28, 39);
-let cinder7 = new CinderellasList('Katya', 21, 40);
-let cinder8 = new CinderellasList('Sofiya', 18, 36);
-let cinder9 = new CinderellasList('Khristyna', 23, 38);
-let cinder10 = new CinderellasList('Veronika', 29, 39);
+let cinder1 = new Cinderella('Anna', 18, 37);
+let cinder2 = new Cinderella('Vika', 20, 39);
+let cinder3= new Cinderella('Sveta', 25, 38);
+let cinder4 = new Cinderella('Alina', 40, 41);
+let cinder5 = new Cinderella('Nadya', 19, 35);
+let cinder6 = new Cinderella('Julia', 28, 39);
+let cinder7 = new Cinderella('Katya', 21, 40);
+let cinder8 = new Cinderella('Masha', 18, 36);
+let cinder9 = new Cinderella('Kristina', 23, 38);
+let cinder10 = new Cinderella('Veronika', 29, 39);
 
 cinderellasArr.push(cinder1, cinder2, cinder3, cinder4, cinder5, cinder6, cinder7, cinder8, cinder9, cinder10);
 
@@ -275,7 +276,7 @@ class Prince {
         this.shoe = shoe;
     }
 }
-let prince = new Prince('vasya', 30, 35);
+let prince = new Prince('Vasya', 30, 35);
 
 
 //     За допомоги циклу знайти яка попелюшка повинна бути з принцом.
@@ -291,6 +292,6 @@ for (const findShoe of cinderellasArr) {
 //     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
 
 
-let found = cinderellasArr.find(shoe => shoe.foot === prince.shoe);
+let found = cinderellasArr.find(lostShoe => lostShoe.foot === prince.shoe);
 
 console.log(found);
