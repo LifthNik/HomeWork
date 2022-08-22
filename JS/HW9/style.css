@@ -1,0 +1,183 @@
+/*1 task simpsons*/
+.simpsonFamily {
+    display: flex;
+    align-items: flex-start;
+
+    border: 3px solid black;
+    background: silver;
+}
+
+h1{
+    margin: 0;
+
+    font-size: 40px;
+
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+.member {
+    text-align: center;
+
+    margin: 10px;
+    border: 1px solid black;
+    background: yellow;
+
+    width: 25%;
+}
+
+p {
+    font-family: "Trebuchet MS", serif;
+    padding: 2px;
+}
+
+img {
+    height: 200px;
+}
+
+/*2 courses*/
+
+.coursesMain{
+    margin-top: 10px;
+
+    display: flex;
+    align-items: flex-start;
+
+    border: 3px solid black;
+    background: silver;
+}
+.card {
+    margin: 2px;
+
+    background: white;
+    border: 1px solid black;
+
+    width: 20%;
+    height: 100%;
+}
+
+.header {
+    text-align: center;
+    font-size: 20px;
+}
+.durations {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.in {
+    margin-top: 3px;
+    border: 1px solid black;
+
+}
+
+/*task 3*/
+
+.boxClone {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-top: 10px;
+    border: 3px solid black;
+
+    background: silver;
+}
+
+.task4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-top: 10px;
+    border: 3px solid black;
+
+    background: silver;
+
+    font-size: 60px;
+}
+
+/*Task 5*/
+
+.task5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-top: 10px;
+    border: 3px solid black;
+
+    background: silver;
+
+    text-align: center;
+    justify-items: center;
+}
+
+.courseList {
+
+    border: 1px solid black;
+    margin: 2px;
+
+    width: 10%;
+    height: 100px;
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Task 6*/
+
+.task6 {
+    display: flex;
+
+    margin-top: 10px;
+    border: 3px solid black;
+
+    background: silver;
+}
+
+.item {
+    width: 200px;
+
+    background: whitesmoke;
+
+    border: 1px solid black;
+    margin: 10px;
+
+    text-align: center;
+}
+/*Task 7*/
+.deleteButton {
+    display: flex;
+
+    margin-top: 10px;
+    border: 3px solid black;
+
+    background: silver;
+
+    justify-content: space-evenly;
+    align-items: center;
+}
+button {
+    width: 100px;
+    height: 100px;
+}
+
+.inputs {
+    display: flex;
+    align-items: center;
+
+    margin-top: 10px;
+    border: 3px solid black;
+
+    background: silver;
+}
+form {
+    margin: 10px;
+}
+button {
+    height: 50px;
+}
