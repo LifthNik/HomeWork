@@ -13,11 +13,13 @@ fetch('https://jsonplaceholder.typicode.com/users')
         let firstBox = document.getElementsByClassName('usersBlock')[0];
         firstBox.appendChild(userDiv);                            //adding Users Divs
 
+
         let postBttn = document.createElement('button'); //button staff
         postBttn.classList.add('firstBttn');
         postBttn.innerText = 'Details';
 
-        postBttn.onclick = function () {
+        postBttn.onclick = () => {
+
             location.href = 'user-details.html'; //next page
         }
 
