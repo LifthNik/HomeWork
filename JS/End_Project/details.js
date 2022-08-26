@@ -43,7 +43,8 @@ fetch('https://jsonplaceholder.typicode.com/users')
 
 
                 let mainDiv = document.getElementsByClassName('usersInfo')[0];
-                div.id = `${user.id}`
+
+                div.id = `${user.id}`;                                     //adding ID for each user div
 
                 mainDiv.appendChild(div);
             }
