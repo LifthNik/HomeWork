@@ -75,7 +75,7 @@ fetch(`https://jsonplaceholder.typicode.com/users/${user.id}/posts`)
             idTitle.appendChild(titleButton);
 
             titleButton.onclick = () => {
-                location.href = `post-details.html?postid=${posts[i].id}`;
+                location.href = `post-details.html?post-id=${posts[i].id}`;
             }
 
         }
