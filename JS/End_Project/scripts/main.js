@@ -20,10 +20,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
         postBttn.innerText = 'Details';
 
         postBttn.onclick = () => {
-
             location.href = `user-details.html?id=${user.id}`;//next page
-
-
         }
 
         userDiv.appendChild(postBttn);                            //add Button
