@@ -1,53 +1,56 @@
-fetch('https://jsonplaceholder.typicode.com/users')
-    .then(list => list.json())                                               //taking users array
+let url = new URL(location.href);
+let id = url.searchParams.get('id');
+fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+    .then(list => list.json())
+    .then(user => {
 
-    .then(usersArr => usersArr.forEach(user => {
+            let div = document.createElement('div');
+            div.classList.add('textPart');
 
-        let div = document.createElement('div');
-        div.classList.add('userInfo');
+        for (const divKey in user) {
+            if (typeof user[divKey] === "object") {
 
-        for (const key in user) {
+                let addressDiv = document.createElement('div');
+                addressDiv.classList.add('textInfo');
+                addressDiv.innerText = `${divKey.toUpperCase()}:`;
 
-            if (typeof user[key] == 'object') {
+                let ul = document.createElement('ul');
+                addressDiv.appendChild(ul);
 
-                let divAddress = document.createElement('div');
-                divAddress.classList.add('addressDiv')
+                let a = user[divKey];
+                for (const aElement in a) {
+                    let liAddress = document.createElement('li');
+                    liAddress.innerHTML = `${aElement.toUpperCase()}: ${JSON.stringify(a[aElement]).replace(/[{}"]/gi, ' ')}`;
+                    ul.appendChild(liAddress);
+                }
 
-                let ulList = document.createElement('ul')
-                ulList.innerText = `${key}:`
-                divAddress.appendChild(ulList)
-
-                let a = user[key];
-
-                        for (const aElement in a) {
-
-                        let liAddress = document.createElement('li');
-                        liAddress.innerHTML = `${aElement}: ${JSON.stringify(a[aElement]).replace(/[{}"]/gi, ' ')}`;
-                        ulList.appendChild(liAddress);
-
-                        if (a.street === undefined) {
-                            liAddress.innerHTML = `${aElement}: ${JSON.stringify(a[aElement])}`;
-                            ulList.appendChild(liAddress);
-                        }
-                        }
-
-                div.appendChild(divAddress);
+                div.appendChild(addressDiv);
 
             } else {
 
                 let userDiv = document.createElement('div');
-                userDiv.innerHTML = `${key}: ${user[key]}`
-
+                userDiv.classList.add('textInfo');
+                userDiv.innerText = `${divKey.toUpperCase()}: ${user[divKey]}`;
 
                 div.appendChild(userDiv);
 
 
-                let mainDiv = document.getElementsByClassName('usersInfo')[0];
-
-                div.id = `${user.id}`;                                     //adding ID for each user div
-
-                mainDiv.appendChild(div);
+                let insert = document.getElementsByClassName('userInfo')[0];
+                insert.appendChild(div);
             }
         }
 
-    }));
+        //big button staff
+        let bttn = document.createElement('button');
+        bttn.classList.add('mainButton');
+        bttn.innerText = 'Posts of current user'
+
+        let bttnDiv = document.getElementsByClassName('bttn')[0];
+        bttnDiv.appendChild(bttn);
+
+        bttn.onclick = () => {
+            let titles = document.getElementsByClassName('postsTitle')[0];
+            titles.classList.add('disFlex');
+        };
+    });
+

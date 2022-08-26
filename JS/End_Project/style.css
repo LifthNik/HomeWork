@@ -31,21 +31,49 @@
     height: 40%;
 }
 
-.usersInfo{
+.userInfo{
     background: silver;
 
     display: flex;
     flex-direction: column;
 }
+.textPart {
+    display: flex;
+    flex-direction: column;
 
-.userInfo{
+    width: 50%;
+}
+
+.textInfo{
     background: whitesmoke;
 
     border: 1px solid black;
-    margin: 10px;
+    margin: 5px;
 }
 
+.bttn {
+    display: flex;
+    justify-content: center;
 
-.usersInfo{
-    font-family: "Trebuchet MS", serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mainButton {
+    height: 50px;
+    width: 90%;
+}
+
+.postsTitle {
+    display: none;
+    justify-content: center;
+
+    height: 200px;
+    width: 100%;
+
+    background: silver;
+    border: 2px solid black;
+}
+.disFlex{
+    display: flex;
 }
