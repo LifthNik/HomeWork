@@ -45,12 +45,47 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
         bttn.classList.add('mainButton');
         bttn.innerText = 'Posts of current user'
 
-        let bttnDiv = document.getElementsByClassName('bttn')[0];
-        bttnDiv.appendChild(bttn);
+        let bigButton = document.getElementsByClassName('bttn')[0];
+        bigButton.appendChild(bttn);
 
         bttn.onclick = () => {
+
+
+fetch(`https://jsonplaceholder.typicode.com/users/${user.id}/posts`)
+    .then(titles => titles.json())
+    .then(posts => {
+
+        console.log(posts)
+
+        let titleDiv = document.createElement('div');
+        titleDiv.classList.add('titleCard');
+
+        for (let i = 0; i < posts.length; i++) {
+            let idTitle = document.createElement('div');
+            idTitle.classList.add('cards');
+            idTitle.innerText = `Post ID: ${posts[i].id}
+            Title: ${posts[i].title}`;
+            titleDiv.appendChild(idTitle);
+
+
+
+            let titleButton = document.createElement('button');
+            titleButton.classList.add('titButton');
+            titleButton.innerText = 'Details';
+            idTitle.appendChild(titleButton);
+
+            titleButton.onclick = () => {
+                location.href = `post-details.html?postid=${posts[i].id}`;
+            }
+
+        }
+        let chain = document.getElementsByClassName('postsTitle')[0];
+        chain.appendChild(titleDiv)
+        }
+    )
             let titles = document.getElementsByClassName('postsTitle')[0];
             titles.classList.add('disFlex');
         };
     });
+
 

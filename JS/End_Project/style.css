@@ -1,3 +1,7 @@
+body{
+   font-family: "Trebuchet MS", serif;
+}
+
 .usersBlock {
     display: flex;
     flex-wrap: wrap;
@@ -20,10 +24,10 @@
     border: 1px solid black;
     border-radius: 10px;
     margin: 20px;
+
     background: whitesmoke;
 
     font-size: 30px;
-    font-family: "Trebuchet MS", serif;
 }
 
 .firstPageButton{
@@ -41,7 +45,7 @@
     display: flex;
     flex-direction: column;
 
-    width: 50%;
+    width: 100%;
 }
 
 .textInfo{
@@ -68,12 +72,38 @@
     display: none;
     justify-content: center;
 
-    height: 200px;
     width: 100%;
-
-    background: silver;
-    border: 2px solid black;
 }
 .disFlex{
     display: flex;
+}
+.titleCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    background: whitesmoke;
+
+    width: 80%;
+
+
+    border: 1px solid black;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: whitesmoke;
+    text-align: center;
+
+    width: 40%;
+
+    border: 1px solid black;
+    margin: 10px;
+    padding: 5px;
+}
+.titButton {
+    margin: 5px;
 }
