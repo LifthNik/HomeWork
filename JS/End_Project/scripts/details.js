@@ -1,5 +1,6 @@
 let url = new URL(location.href);
 let id = url.searchParams.get('id');
+
 fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
     .then(list => list.json())
     .then(user => {
@@ -63,8 +64,7 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
             let idTitle = document.createElement('div');
             idTitle.classList.add('cards');
 
-            idTitle.innerText = `Post ID: ${posts[i].id}
-            Title: ${posts[i].title}`;
+            idTitle.innerText = `Title: ${posts[i].title}`;
 
             titleDiv.appendChild(idTitle);
 
@@ -85,7 +85,7 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
         }
     )
             let titles = document.getElementsByClassName('postsTitle')[0];
-            titles.classList.add('disFlex');
+            titles.classList.add('show');
         };
     });
 
