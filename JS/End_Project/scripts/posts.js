@@ -3,8 +3,6 @@ let url = new URL(location.href);
 let id = url.searchParams.get('id');
 let post = +url.searchParams.get('post');
 
-// console.log(id);
-// console.log(post);
 
 fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
 
@@ -31,13 +29,14 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
         inner.appendChild(mainDiv);
     });
 
+
 fetch(`https://jsonplaceholder.typicode.com/posts/${post}/comments`)
     .then(comments => comments.json())
     .then(comment => {
 
 
-
         for (const commentObj of comment) {
+
 
             let div = document.createElement('div');
             div.classList.add('comment');
@@ -54,7 +53,4 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${post}/comments`)
                 d.appendChild(div);
             }
         }
-
-
-
-    })
+    });
