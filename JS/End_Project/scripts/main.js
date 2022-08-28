@@ -16,7 +16,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
 
         let postBttn = document.createElement('button'); //button staff
         postBttn.classList.add('firstPageButton');
-        postBttn.id = `${user.id}`
+        postBttn.id = `${user.id}`;
         postBttn.innerText = 'Details';
 
         postBttn.onclick = () => {

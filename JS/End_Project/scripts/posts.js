@@ -40,7 +40,7 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${post}/comments`)
         for (const commentObj of comment) {
 
             let div = document.createElement('div');
-            div.classList.add('comment')
+            div.classList.add('comment');
 
 
             for (const commentKey in commentObj) {
@@ -48,10 +48,10 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${post}/comments`)
                 let divIn = document.createElement('p')
                 divIn.innerText = `${commentKey.toUpperCase()}: ${commentObj[commentKey]}`;
 
-                div.appendChild(divIn)
+                div.appendChild(divIn);
 
                 let d = document.getElementsByClassName('comments')[0];
-                d.appendChild(div)
+                d.appendChild(div);
             }
         }
 

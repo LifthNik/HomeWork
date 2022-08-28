@@ -44,7 +44,7 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
 
         let bttn = document.createElement('button');
         bttn.classList.add('mainButton');
-        bttn.innerText = 'Posts of current user'
+        bttn.innerText = 'Posts of current user';
 
         let bigButton = document.getElementsByClassName('bttn')[0];
         bigButton.appendChild(bttn);
@@ -82,8 +82,10 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
                 location.href = `post-details.html?id=${user.id}&post=${posts[i].id}`;
             }
         }
+
         let postPage = document.getElementsByClassName('postsTitle')[0];
-        postPage.appendChild(titleDiv)
+        postPage.appendChild(titleDiv);
+
         }
     )
             let titles = document.getElementsByClassName('postsTitle')[0];
