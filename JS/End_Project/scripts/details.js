@@ -5,23 +5,27 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
     .then(list => list.json())
     .then(user => {
 
+function toUpper(text) {
+    return text[0].toUpperCase() + text.slice(1);
+} //не відноситься до завдання.
+
             let div = document.createElement('div');
             div.classList.add('textPart');
 
-        for (const divKey in user) {
-            if (typeof user[divKey] === "object") {
+        for (const key in user) {
+            if (typeof user[key] === "object") {
 
                 let addressDiv = document.createElement('div');
                 addressDiv.classList.add('textInfo');
-                addressDiv.innerText = `${divKey.toUpperCase()}:`;
+                addressDiv.innerText = `${toUpper(key)}:`;
 
                 let ul = document.createElement('ul');
                 addressDiv.appendChild(ul);
 
-                let a = user[divKey];
+                let a = user[key];
                 for (const aElement in a) {
                     let liAddress = document.createElement('li');
-                    liAddress.innerHTML = `${aElement.toUpperCase()}: ${JSON.stringify(a[aElement]).replace(/[{}"]/gi, ' ')}`;
+                    liAddress.innerHTML = `${toUpper(aElement)}: ${JSON.stringify(a[aElement]).replace(/[{}"]/gi, ' ')}`;
                     ul.appendChild(liAddress);
                 }
 
@@ -31,7 +35,7 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
 
                 let userDiv = document.createElement('div');
                 userDiv.classList.add('textInfo');
-                userDiv.innerText = `${divKey.toUpperCase()}: ${user[divKey]}`;
+                userDiv.innerText = `${toUpper(key)}: ${user[key]}`;
 
                 div.appendChild(userDiv);
 
@@ -92,5 +96,3 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
             titles.classList.add('show');
         };
     });
-
-
