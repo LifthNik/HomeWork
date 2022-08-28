@@ -31,7 +31,6 @@ function toUpper(text) {
 
                 div.appendChild(addressDiv);
 
-
             } else {
 
                 let userDiv = document.createElement('div');

@@ -1,3 +1,7 @@
+function toUpper(text) {
+    return text[0].toUpperCase() + text.slice(1);
+} //не відноситься до завдання.
+
 let url = new URL(location.href);
 
 let id = url.searchParams.get('id');
@@ -19,7 +23,7 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
 
                     let div = document.createElement('div');
                     div.classList.add('divPost');
-                    div.innerText = `${key.toUpperCase()}: ${postes[key]}`;
+                    div.innerText = `${toUpper(key)}: ${postes[key]}`;
                     mainDiv.appendChild(div);
                 }
             }
@@ -45,7 +49,7 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${post}/comments`)
             for (const commentKey in commentObj) {
 
                 let divIn = document.createElement('p')
-                divIn.innerText = `${commentKey.toUpperCase()}: ${commentObj[commentKey]}`;
+                divIn.innerText = `${toUpper(commentKey)}: ${commentObj[commentKey]}`;
 
                 div.appendChild(divIn);
 
