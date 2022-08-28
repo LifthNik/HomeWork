@@ -38,9 +38,7 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${post}/comments`)
     .then(comments => comments.json())
     .then(comment => {
 
-
-        for (const commentObj of comment) {
-
+        for (let commentObj of comment) {
 
             let div = document.createElement('div');
             div.classList.add('comment');
