@@ -41,7 +41,7 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
             }
         }
 
-        //big button staff
+
         let bttn = document.createElement('button');
         bttn.classList.add('mainButton');
         bttn.innerText = 'Posts of current user'
@@ -51,6 +51,8 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
 
         bttn.onclick = () => {
             bttn.disabled = true;
+
+
 
 fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
     .then(titles => titles.json())
@@ -80,8 +82,8 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
                 location.href = `post-details.html?id=${user.id}&post=${posts[i].id}`;
             }
         }
-        let chain = document.getElementsByClassName('postsTitle')[0];
-        chain.appendChild(titleDiv)
+        let postPage = document.getElementsByClassName('postsTitle')[0];
+        postPage.appendChild(titleDiv)
         }
     )
             let titles = document.getElementsByClassName('postsTitle')[0];

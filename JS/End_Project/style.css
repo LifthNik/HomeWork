@@ -104,6 +104,7 @@ h1 {
     width: 80%;
 
     border: 1px solid black;
+    border-radius: 10px;
 }
 
 .cards {
@@ -117,6 +118,7 @@ h1 {
     width: 40%;
 
     border: 1px solid black;
+    border-radius: 10px;
     margin: 10px;
     padding: 5px;
 }
