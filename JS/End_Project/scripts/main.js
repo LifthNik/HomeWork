@@ -1,28 +1,26 @@
-//Divs for Users
-
 fetch('https://jsonplaceholder.typicode.com/users')
-    .then(list => list.json())                                    //taking users array
+    .then(list => list.json())
     .then(users => users.forEach(user => {
 
-        let userDiv = document.createElement('div');      //adding user Div
+        let userDiv = document.createElement('div');
         userDiv.classList.add('userDiv');
 
 
-        userDiv.innerHTML = `${user.id}. ${user.name}`;           // adding text
+        userDiv.innerHTML = `${user.id}. ${user.name}`;
 
         let firstBox = document.getElementsByClassName('usersBlock')[0];
-        firstBox.appendChild(userDiv);                            //adding Users Divs
+        firstBox.appendChild(userDiv);
 
 
-        let postBttn = document.createElement('button'); //button staff
+        let postBttn = document.createElement('button');
         postBttn.classList.add('firstPageButton');
         postBttn.id = `${user.id}`;
         postBttn.innerText = 'Details';
 
         postBttn.onclick = () => {
-            location.href = `user-details.html?id=${user.id}`;//next page
+            location.href = `user-details.html?id=${user.id}`;
         }
 
-        userDiv.appendChild(postBttn);                            //add Button
+        userDiv.appendChild(postBttn);
 
     }));
